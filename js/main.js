@@ -270,8 +270,24 @@
   });
 
 
+  // Show popup on page load
+  window.onload = function () {
+    document.getElementById("welcomePopup").style.display = "flex";
+  };
 
-
-
+  // Select close button and popup
+  const closeBtn = document.querySelector(".close-btn");
+  const popup = document.getElementById("welcomePopup");
+   // Show popup
+    popup.style.display = "flex";
+   // Auto hide after 15 seconds
+    setTimeout(() => {
+      popup.style.display = "none";
+    }, 15000);
+	// Close on click
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
 })(jQuery);
+
 
