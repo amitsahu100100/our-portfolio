@@ -283,7 +283,7 @@
    // Auto hide after 15 seconds
     setTimeout(() => {
       popup.style.display = "none";
-    }, 15000);
+    }, 5000);
 	// Close on click
     closeBtn.addEventListener("click", () => {
       popup.style.display = "none";
